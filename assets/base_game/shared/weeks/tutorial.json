@@ -1,16 +1,17 @@
 {
 	"songs": [
-		["Tutorial", "gf", [165, 0, 77]]
+		["Warmup", "Dave", [0, 191, 255]]
 	],
 
 	"weekCharacters": [
 		"",
-		"bf",
-		"gf"
+		"",
+		""
 	],
-	"weekBackground": "stage",
+	"weekBackground": "",
 
 	"storyName": "",
+	"difficulties": "hard"
 	"weekBefore": "tutorial",
 	"weekName": "Tutorial",
 	"startUnlocked": true,
