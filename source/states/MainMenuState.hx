@@ -342,6 +342,12 @@ class MainMenuState extends MusicBeatState
 		super.update(elapsed);
 	}
 
+public static function randomizeBG():flixel.system.FlxAssets.FlxGraphicAsset
+{
+var chance:Int = FlxG.random.int(0, bgPaths.length - 1);
+return Paths.image(bgPaths[chance]);
+}
+
 	function changeItem(change:Int = 0)
 	{
 		if(change != 0) curColumn = CENTER;
