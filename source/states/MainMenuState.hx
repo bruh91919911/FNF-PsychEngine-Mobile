@@ -38,9 +38,29 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 
 	public static var bgPaths:Array<String> = [
-          'backgrounds/sewey',
-	  'backgrounds/kewey'
-	];
+        'Backgrounds/Aadsta', 
+        'Backgrounds/ArtiztGmer', 
+        'Backgrounds/DeltaKastel', 
+        'Backgrounds/DeltaKastel2', 
+        'Backgrounds/DeltaKastel3', 
+        'Backgrounds/DeltaKastel4', 
+        'Backgrounds/DeltaKastel5', 
+        'Backgrounds/diamond man', 
+        'Backgrounds/Jukebox', 
+        'Backgrounds/kiazu', 
+        'Backgrounds/Lancey',
+        'Backgrounds/mamakotomi', 
+        'Backgrounds/mantis', 
+        'Backgrounds/mepperpint', 
+        'Backgrounds/morie', 
+        'Backgrounds/neon', 
+        'Backgrounds/Onuko', 
+        'Backgrounds/ps', 
+        'Backgrounds/ricee_png', 
+        'Backgrounds/sk0rbias', 
+        'Backgrounds/SwagnotrllyTheMod', 
+        'Backgrounds/zombought',
+];
 
 	override function create()
 	{
