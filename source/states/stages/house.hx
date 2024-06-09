@@ -3,36 +3,24 @@ package states.stages;
 import states.stages.objects.*;
 import objects.Character;
 
-class StageWeek1 extends BaseStage
+class house extends BaseStage
 {
-	var dadbattleBlack:BGSprite;
-	var dadbattleLight:BGSprite;
-	var dadbattleFog:DadBattleFog;
 	override function create()
 	{
-		var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
+		var bg:BGSprite = new BGSprite('bg', -600, -300, Paths.image('davehouse/bg'), 0.6, 0.6);
 		add(bg);
-
-		var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
-		stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
-		stageFront.updateHitbox();
+		
+		var stageHills:BGSprite = new BGSprite('stageHills', -834, -159, Paths.image('davehouse/hills'), 0.7, 0.7);
+		add(stageHills);
+		
+		var grassbg:BGSprite = new BGSprite('grassbg', -1205, 580, Paths.image('davehouse/grassbg'));
+		add(grassbg);
+		
+		var gate:BGSprite = new BGSprite('bg', -755, 250, Paths.image('davehouse/gate'));
+		add(gate);
+		
+		var stageFront:BGSprite = new BGSprite('bg', -832, 505, Paths.image('davehouse/grass'));
 		add(stageFront);
-		if(!ClientPrefs.data.lowQuality) {
-			var stageLight:BGSprite = new BGSprite('stage_light', -125, -100, 0.9, 0.9);
-			stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
-			stageLight.updateHitbox();
-			add(stageLight);
-			var stageLight:BGSprite = new BGSprite('stage_light', 1225, -100, 0.9, 0.9);
-			stageLight.setGraphicSize(Std.int(stageLight.width * 1.1));
-			stageLight.updateHitbox();
-			stageLight.flipX = true;
-			add(stageLight);
-
-			var stageCurtains:BGSprite = new BGSprite('stagecurtains', -500, -300, 1.3, 1.3);
-			stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
-			stageCurtains.updateHitbox();
-			add(stageCurtains);
-		}
 	}
 }
 	
