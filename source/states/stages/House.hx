@@ -3,7 +3,7 @@ package states.stages;
 import states.stages.objects.*;
 import objects.Character;
 
-class house extends BaseStage
+class House extends BaseStage
 {
 	override function create()
 	{
