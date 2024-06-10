@@ -89,6 +89,13 @@ class MainMenuState extends MusicBeatState
 		bg.color = 0xFFFDE871;
 		add(bg);
 
+		var selectBG:FlxSprite = new FlxSprite(-80).loadGraphic(Paths.image('mainmenu/Select_Thing'));
+                selectBG.scrollFactor.set(0, 0);
+                selectBG.updateHitbox();
+                selectBG.screenCenter();
+                selectBG.antialiasing = ClientPrefs.globalAntialiasing;
+                add(selectBG);
+
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
@@ -101,8 +108,6 @@ class MainMenuState extends MusicBeatState
 		magenta.visible = false;
 		magenta.color = 0xFFfd719b;
 		add(magenta);
-
-		
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
 		add(menuItems);
