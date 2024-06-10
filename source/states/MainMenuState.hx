@@ -93,7 +93,7 @@ class MainMenuState extends MusicBeatState
                 selectBG.scrollFactor.set(0, 0);
                 selectBG.updateHitbox();
                 selectBG.screenCenter();
-                selectBG.antialiasing = ClientPrefs.globalAntialiasing;
+                selectBG.antialiasing = ClientPrefs.data.antialiasing;
                 add(selectBG);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
